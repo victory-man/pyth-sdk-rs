@@ -2,7 +2,7 @@
 name = "test-contract"
 version = "0.3.0"
 workspace = "../../"
-edition = "2018"
+edition = "2021"
 
 [features]
 test-bpf = []
@@ -12,8 +12,8 @@ no-entrypoint = []
 pyth-sdk-solana = { path = "../", version = "0.10.0" }
 solana-program = ">= 1.10"
 bytemuck = "1.7.2"
-borsh = "0.10.3"
-borsh-derive = "0.10.3"
+borsh = "1.5.7"
+borsh-derive = "1.5.7"
 
 [dev-dependencies]
 solana-program-test = ">= 1.10"
