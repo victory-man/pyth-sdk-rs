@@ -10,7 +10,7 @@ members = [
 pyth-sdk = { path = "./pyth-sdk", version = "0.8.0" }
 pyth-sdk-solana = { path = "./pyth-sdk-solana", version = "0.10.4" }
 
-solana-program = ">= 1.10"
+solana-program = "3.0.0"
 borsh = "1.5.7"
 borsh-derive = "1.5.7"
 serde = "1.0.136"
