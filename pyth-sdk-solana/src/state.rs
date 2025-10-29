@@ -1,7 +1,9 @@
 //! Structures and functions for interacting with Solana on-chain account data.
 
-use borsh_derive::BorshSerialize;
-use borsh_derive::BorshDeserialize;
+use borsh::{
+    BorshDeserialize,
+    BorshSerialize,
+};
 use bytemuck::{
     cast_slice,
     from_bytes,
