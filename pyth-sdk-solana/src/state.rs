@@ -1,9 +1,9 @@
 //! Structures and functions for interacting with Solana on-chain account data.
 
-use borsh::{
-    BorshDeserialize,
-    BorshSerialize,
-};
+// use borsh::{
+//     BorshDeserialize,
+//     BorshSerialize,
+// };
 use bytemuck::{
     cast_slice,
     from_bytes,
@@ -43,8 +43,8 @@ pub const PROD_ATTR_SIZE: usize = PROD_ACCT_SIZE - PROD_HDR_SIZE;
     Debug,
     PartialEq,
     Eq,
-    BorshSerialize,
-    BorshDeserialize,
+    borsh_derive::BorshSerialize,
+    borsh_derive::BorshDeserialize,
     serde::Serialize,
     serde::Deserialize,
     Default,
@@ -66,8 +66,8 @@ pub enum AccountType {
     Debug,
     PartialEq,
     Eq,
-    BorshSerialize,
-    BorshDeserialize,
+    borsh_derive::BorshSerialize,
+    borsh_derive::BorshDeserialize,
     serde::Serialize,
     serde::Deserialize,
     Default,
@@ -86,8 +86,8 @@ pub enum CorpAction {
     Debug,
     PartialEq,
     Eq,
-    BorshSerialize,
-    BorshDeserialize,
+    borsh_derive::BorshSerialize,
+    borsh_derive::BorshDeserialize,
     serde::Serialize,
     serde::Deserialize,
     Default,
@@ -106,8 +106,8 @@ pub enum PriceType {
     Debug,
     PartialEq,
     Eq,
-    BorshSerialize,
-    BorshDeserialize,
+    borsh_derive::BorshSerialize,
+    borsh_derive::BorshDeserialize,
     serde::Serialize,
     serde::Deserialize,
     Default,
@@ -218,8 +218,8 @@ unsafe impl Pod for ProductAccount {
     Default,
     PartialEq,
     Eq,
-    BorshSerialize,
-    BorshDeserialize,
+    borsh_derive::BorshSerialize,
+    borsh_derive::BorshDeserialize,
     serde::Serialize,
     serde::Deserialize,
 )]
@@ -248,8 +248,8 @@ pub struct PriceInfo {
     Default,
     PartialEq,
     Eq,
-    BorshSerialize,
-    BorshDeserialize,
+    borsh_derive::BorshSerialize,
+    borsh_derive::BorshDeserialize,
     serde::Serialize,
     serde::Deserialize,
 )]
@@ -275,8 +275,8 @@ pub type Ema = Rational;
     Default,
     PartialEq,
     Eq,
-    BorshSerialize,
-    BorshDeserialize,
+    borsh_derive::BorshSerialize,
+    borsh_derive::BorshDeserialize,
     serde::Serialize,
     serde::Deserialize,
 )]

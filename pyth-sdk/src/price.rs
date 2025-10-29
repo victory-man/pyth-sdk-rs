@@ -1,7 +1,7 @@
-use borsh::{
-    BorshDeserialize,
-    BorshSerialize,
-};
+// use borsh::{
+//     BorshDeserialize,
+//     BorshSerialize,
+// };
 
 use std::convert::TryFrom;
 
@@ -47,8 +47,8 @@ const MAX_PD_V_U64: u64 = (1 << 28) - 1;
     Debug,
     PartialEq,
     Eq,
-    BorshSerialize,
-    BorshDeserialize,
+    borsh_derive::BorshSerialize,
+    borsh_derive::BorshDeserialize,
     serde::Serialize,
     serde::Deserialize,
     JsonSchema,

@@ -3,15 +3,15 @@
 use pyth_sdk_solana::Price;
 
 use crate::id;
-use borsh::{
-    BorshDeserialize,
-    BorshSerialize,
-};
+// use borsh::{
+//     BorshDeserialize,
+//     BorshSerialize,
+// };
 use solana_program::instruction::Instruction;
 
 /// Instructions supported by the pyth-client program, used for testing and
 /// instruction counts
-#[derive(Clone, Debug, BorshSerialize, BorshDeserialize, PartialEq)]
+#[derive(Clone, Debug, borsh_derive::BorshSerialize, borsh_derive::BorshDeserialize, PartialEq)]
 pub enum PythClientInstruction {
     Divide {
         numerator:   Price,

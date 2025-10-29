@@ -1,7 +1,8 @@
-use borsh::{
-    BorshDeserialize,
-    BorshSerialize,
-};
+// use borsh::{
+//     BorshDeserialize,
+//     BorshSerialize,
+// };
+
 
 use hex::FromHexError;
 use schemars::JsonSchema;
@@ -21,8 +22,8 @@ pub use price::Price;
     PartialOrd,
     Ord,
     Hash,
-    BorshSerialize,
-    BorshDeserialize,
+    borsh_derive::BorshSerialize,
+    borsh_derive::BorshDeserialize,
     serde::Serialize,
     serde::Deserialize,
     JsonSchema,
