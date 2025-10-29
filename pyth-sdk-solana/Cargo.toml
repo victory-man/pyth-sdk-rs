@@ -23,7 +23,7 @@ thiserror = "1.0"
 serde = { workspace = true, features = ["derive"] }
 
 [dev-dependencies]
-solana-client = ">= 3.0.1"
+solana-client = ">= 1.9"
 solana-sdk = ">= 1.9"
 
 [lib]
