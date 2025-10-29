@@ -1,7 +1,7 @@
-// use borsh::{
-//     BorshDeserialize,
-//     BorshSerialize,
-// };
+use borsh_derive::{
+    BorshDeserialize,
+    BorshSerialize,
+};
 
 
 use hex::FromHexError;

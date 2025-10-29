@@ -1,5 +1,6 @@
 //! Program instructions for end-to-end testing and instruction counts
 
+use borsh::ser::BorshSerialize;
 use pyth_sdk_solana::Price;
 
 use crate::id;
